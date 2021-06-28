@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario de Devolucion</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/DevoluciónForm.css'>
+    <script src="JS/libros.js"></script>
+</head>
+
+<header>
+
+    <div class="menu">
+        <img src="Imagenes Inicio/emma logo.jpg" alt="Logo de la Emma Balaguer">
+       <nav> 
+        <ul>
+            <li><h4><a href="index.html">INICIO</a></h4></li>
+            <li><h4><a href="SolicitudForm.html">SOLICITAR</a></h4></li>
+            <li><h4><a href="#">DEVOLUCIÓN</a></h4></li>
+            <li><h4><a href="Biblioteca.html">BIBLIOTECA</a></h4></li>
+        </ul>
+       </nav>
+
+    </div>
+
+</header>     
+    
+<body>
+    
+        <form action="" class="formulario" id="formulario">
+
+            <h3><span style="color: #4682b4;">LIBRO DEVUELTO</span></h3>
+
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>INGRESE EL CODIGO DEL LIBRO:</strong></span></label>
+            <select name="Código" id="codigo" required>
+                <option>Seleciona un codigo</option>
+                <option>CADS</option>
+                <option>CDUMA</option>
+                <option>EAL</option>
+                <option>EEX</option>
+                <option>EPR</option>
+                <option>ERDDG</option>
+              </select>         
+            
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Titulo:</strong></span></label>
+        <input type="text" id="titulo" class="formulario__input" required>
+            
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Estante:</strong></span></label> 
+        <input type="text" id="estante" class="formulario__input" required>
+       
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Autor:</strong></span></label> 
+        <input type="text" id="autor" class="formulario__input" required>
+            
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>DEVUELTO POR:</strong></span></label>
+            
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Nombre/s:</strong></span></label> 
+        <input type="text" id="nombre" class="formulario__input" required>
+       
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Apellido/s:</strong></span></label> 
+        <input type="text" id="apellido" class="formulario__input" required>
+            
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Curso:</strong></span></label> 
+        <input type="text" id="curso" class="formulario__input" required>
+
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Numero de Orden:</strong></span></label> 
+        <input type="number" id="numero" class="formulario__input" required>
+            
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Fecha de Solicitud</strong></span></label> 
+        <input type="date" id="fechaS" class="formulario__input" required>
+            
+            <label for="" class="formulario__label"><span style="color: gray;" ><strong>Fecha de Devolución:</strong></span></label> 
+        <input type="date" id="fechaD" class="formulario__input" required>
+
+            <div class="main"></div>
+
+            <input type="submit" class="formulario__submit" value="DEVUELTO">
+    <script src="JS/devolucionForm.js"></script>
+    
+</body>
+</html>

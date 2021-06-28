@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Formulario de Devolucion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="CSS/SolicitudForm.css"
+    />
+    <script src="JS/libros.js"></script>
+  </head>
+
+  <header>
+    <div class="menu">
+      <img src="Imagenes Inicio/emma logo.jpg" alt="Logo de la Emma Balaguer" />
+      <nav>
+        <ul>
+          <li>
+            <h4><a href="index.html">INICIO</a></h4>
+          </li>
+          <li>
+            <h4><a href="#">SOLICITAR</a></h4>
+          </li>
+          <li>
+            <h4><a href="DevoluciónForm.html">DEVOLUCIÓN</a></h4>
+          </li>
+          <li>
+            <h4><a href="Biblioteca.html">BIBLIOTECA</a></h4>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <div class="estilo__titulo">
+      <h2 class="formulario__titulo">SOLICITUD DE LIBRO</h2>
+    </div>
+
+    <form class="formulario" id="formulario">
+      <h3><span style="color: #4682b4">INFORMACIÓN PERSONAL</span></h3>
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"><strong>Primer Nombre:</strong></span></label
+      >
+      <input type id="nombre" class="formulario__input" required />
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"><strong>Apellido/s:</strong></span></label
+      >
+      <input type="text" id="apellido" class="formulario__input" required />
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"
+          ><strong>Correo Electrónico:</strong></span
+        ></label
+      >
+      <input type="email" id="correo" class="formulario__input" required />
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"><strong>Telefono:</strong></span></label
+      >
+      <input type="tel" id="telefono" class="formulario__input" required />
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"><strong>Curso:</strong></span></label
+      >
+      <input type="text" id="curso" class="formulario__input" required />
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"
+          ><strong>Número de Orden:</strong></span
+        ></label
+      >
+      <input type="number" id="numero" class="formulario__input" required />
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"
+          ><strong>Fecha de solicitud:</strong></span
+        ></label
+      >
+      <input type="date" id="fechaS" class="formulario__input" required />
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"
+          ><strong>Fecha de devolución:</strong></span
+        ></label
+      >
+      <input type="date" id="fechaD" class="formulario__input" required />
+
+      <div class="main"></div>
+
+      <h3><span style="color: #4682b4">-INFORMACIÓN DEL LIBRO-</span></h3>
+
+      <label for="" class="formulario__label"
+      ><span style="color: gray"><strong>Código:</strong></span></label
+      >
+      <select name="Código" id="codigo" required>
+          <option>Seleciona un codigo</option>
+          <option>CADS</option>
+          <option>CDUMA</option>
+          <option>EAL</option>
+          <option>EEX</option>
+          <option>EPR</option>
+          <option>ERDDG</option>
+        </select>
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"><strong>Título:</strong></span></label
+      >
+      <input type="text" id="titulo" class="formulario__input" required />
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"><strong>Autor:</strong></span></label
+      >
+      <input type="search" id="autor" class="formulario__input" required />
+
+
+
+      <label for="" class="formulario__label"
+        ><span style="color: gray"><strong>Estante:</strong></span></label
+      >
+      <input type="text" id="estante" class="formulario__input" required />
+
+      <div class="main"></div>
+
+      <input type="submit" id="submit" class="formulario__submit" value="Enviar" />
+    </form>
+
+    <div class="main"></div>
+    <script src="JS/utils.js"></script>
+    <script src="JS/SolicitudForm.js"></script>
+  </body>
+</html>

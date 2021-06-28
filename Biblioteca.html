@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Biblioteca</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Biblioteca.css'>
+    <script src="JS/libros.js"></script>
+</head>
+
+<header>
+
+    <div class="menu">
+        <img id="logo" src="Imagenes Inicio/emma logo.jpg" alt="Logo de la Emma Balaguer">
+        <nav>
+            <ul>
+                <li>
+                    <h4><a href="index.html">INICIO</a></h4>
+                </li>
+                <li>
+                    <h4><a href="SolicitudForm.html">SOLICITAR</a></h4>
+                </li>
+                <li>
+                    <h4><a href="DevoluciónForm.html">DEVOLUCIÓN</a></h4>
+                </li>
+                <li>
+                    <h4><a href="#">BIBLIOTECA</a></h4>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+<body>
+
+    <div class="contenedor">
+
+        <h2 class="titulo">Libros de la Biblioteca</h2>
+
+        <div class="contenedor-articulo">
+
+            <div id="cads" class="articulo" data-aos="zoom-in-right">
+                <img src="Catalogo/CADS.jpg" style="height: inherit;width: inherit">
+                <br></br>
+                <h3>Cien Años De Soledad</h3>
+                <p>Es una novela del escritor colombiano Gabriel García Márquez, ganador del Premio Nobel de Literatura
+                    en 1982.</p>
+                <br></br>
+                <p><strong class="codigoClass">Código: CADS</strong></p>
+                <p><strong class="strongClass">Estado: Disponible</strong></p>
+                <p><strong>Autor: García Márquez</strong></p>
+                <p><strong>Estante: G-03</strong></p>
+                <br></br>
+                <a href="#modal1" id="show-1" class="btn-open-popup" style="display: none;"><strong>VER MÁS</strong></a>
+            </div>
+
+            <div class="container-all" id="modal1">
+                <div class="popup">
+                    <div class="img1"></div>
+                    <div class="container-text">
+                        <h1>CIEN AÑOS DE SOLEDAD</h1>
+                        <p>Cien años de soledad es una novela del escritor colombiano Gabriel García Márquez,
+                            ganador del Premio Nobel de Literatura en 1982. Es considerada una obra maestra de la
+                            literatura hispanoamericana y universal, así como una de las obras más traducidas y
+                            leídas en español.​ Fue catalogada como una de las obras más importantes de la lengua
+                            castellana durante el IV Congreso Internacional de la Lengua Española celebrado en
+                            Cartagena de Indias en marzo de 2007.​ Fue incluida en la lista de las 100 mejores
+                            novelas en español del siglo XX del periódico español El Mundo,​ en la lista de los 100
+                            libros del siglo XX del diario francés Le Monde y en los 100 mejores libros de todos
+                            los tiempos del Club de libros de Noruega.</p>
+                        <br>
+                        <span>Autor: García Márquez</span>
+                        <div class="cajaC" style="display: none;">
+                            <h1 class="codigoDeLibro">Solicitante</h1>
+                            <ul>
+                                <li><strong>Nombre: </strong><span class="nombre"></span></li>
+                                <li><strong>Apellido: </strong><span class="apellido"></span></li>
+                                <li><strong>Correo: </strong><span class="correo"></span></li>
+                                <li><strong>Telefono: </strong><span class="telefono"></span></li>
+                                <li><strong>Curso: </strong><span class="curso"></span></li>
+                                <li><strong>No. Registro: </strong><span class="numero"></span></li>
+                                <li><strong>Fecha de solicitud: </strong><span class="fechaS"></span></li>
+                                <li><strong>Fecha de devolucion: </strong><span class="fechaD"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div>
+
+            <div id="cduma" class="articulo" data-aos="zoom-in-right">
+                <img src="Catalogo/CDUMA.jpg" style="height: inherit;width: inherit">
+                <br></br>
+                <h3>Crónica De Una Muerte Anunciada</h3>
+                <p>Es una novela del escritor colombiano Gabriel García Márquez, publicada por primera vez en 1981. </p>
+                <br></br>
+                <p><strong class="codigoClass">Código: CDUMA</strong></p>
+                <p><strong class="strongClass">Estado: Disponible</strong> </p>
+                <br>
+                <p><strong>Autor: García Márquez</strong></p>
+                <p><strong>Estante: F-45</strong></p>
+                <br></br>
+                <a href="#modal2" id="show-2" class="btn-open-popup" style="display: none;"><strong>VER MÁS</strong></a>
+            </div>
+
+            <div class="container-all" id="modal2">
+                <div class="popup">
+                    <div class="img2"></div>
+                    <div class="container-text">
+                        <h1>CRÓNICA DE UNA MUERTE ANUNCIADA</h1>
+                        <p>Crónica de una muerte anunciada es una novela del escritor colombiano Gabriel García
+                            Márquez, publicada por primera vez en 1981. Fue incluida en la lista de las 100 mejores
+                            novelas en español del siglo XX del periódico español El Mundo. La novela representó un
+                            acercamiento entre lo periodístico, lo narrativo, y una aproximación a la novela
+                            policial. La historia contada se inspira en un suceso real, ocurrido en 1951 en el
+                            Municipio de Sucre, ubicado al sur del Departamento de Sucre, en Colombia, del que el
+                            autor tomó la acción central (el crimen), los protagonistas, el escenario y las
+                            circunstancias, alterándolo narrativamente, pero sin descuidar nunca los datos y las
+                            precisiones obligadas en toda crónica periodística.</p>
+                        <br>
+                        <div class="cajaC" style="display: none;">
+                            <ul>
+                                <li><strong>Nombre: </strong><span class="nombre"></span></li>
+                                <li><strong>Apellido: </strong><span class="apellido"></span></li>
+                                <li><strong>Correo: </strong><span class="correo"></span></li>
+                                <li><strong>Telefono: </strong><span class="telefono"></span></li>
+                                <li><strong>Curso: </strong><span class="curso"></span></li>
+                                <li><strong>No. Registro: </strong><span class="numero"></span></li>
+                                <li><strong>Fecha de solicitud: </strong><span class="fechaS"></span></li>
+                                <li><strong>Fecha de devolucion: </strong><span class="fechaD"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div>
+
+            <div id="eal" class="articulo" data-aos="zoom-in-right">
+                <img src="Catalogo/EAL.jpg" style="height: inherit;width: inherit">
+                <br></br>
+                <h3>El Alquimista</h3>
+                <p>Novela escrita por el escritor brasileño Paulo Coelho, ha encontrado devotos seguidores en todo el
+                    mundo. </p>
+                <br></br>
+                <p><strong class="codigoClass">Código: EAL</strong></p>
+                <p><strong class="strongClass">Estado: Disponible</strong></p>
+                <p><strong>Autor: Paulo Coelho</strong></p>
+                <p><strong>Estante: C-09</strong></p>
+                <br></br>
+                <a href="#modal3" id="show-3" class="btn-open-popup" style="display: none;"><strong>VER MÁS</strong></a>
+            </div>
+
+            <div class="container-all" id="modal3">
+                <div class="popup">
+                    <div class="img3"></div>
+                    <div class="container-text">
+                        <h1>EL ALQUIMISTA</h1>
+                        <p>El Alquimista (O Alquimista, 1988), novela escrita por el escritor brasileño Paulo
+                            Coelho, ha encontrado devotos seguidores en todo el mundo. Traducida a 83 lenguas y
+                            publicada en más de 170 países con más de 85 millones de copias en todo el mundo.
+                            Según el periódico estadounidense The New York Times, El alquimista ha consolidado
+                            a Paulo Coelho como el autor vivo más traducido del mundo. La novela tiene más de 2
+                            millones de valoraciones en Goodreads. Rica, evocadora y profundamente humana, la
+                            historia de Santiago es un testimonio eterno de la fuerza transformadora de nuestros
+                            sueños y de la importancia de escuchar a nuestros corazones.</p>
+                        <br>
+                        <div class="cajaC" style="display: none;">
+                            <h1 class="codigoDeLibro">Solicitante</h1>
+                            <ul>
+                                <li><strong>Nombre: </strong><span class="nombre"></span></li>
+                                <li><strong>Apellido: </strong><span class="apellido"></span></li>
+                                <li><strong>Correo: </strong><span class="correo"></span></li>
+                                <li><strong>Telefono: </strong><span class="telefono"></span></li>
+                                <li><strong>Curso: </strong><span class="curso"></span></li>
+                                <li><strong>No. Registro: </strong><span class="numero"></span></li>
+                                <li><strong>Fecha de solicitud: </strong><span class="fechaS"></span></li>
+                                <li><strong>Fecha de devolucion: </strong><span class="fechaD"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div>
+
+            <div id="eex" class="articulo" data-aos="zoom-in-right">
+                <img src="Catalogo/EEX.jpg" style="height: inherit;width: inherit">
+                <br></br>
+                <h3>El Extrajero</h3>
+                <p>Es una novela publicada en 1942, la primera del escritor francés Albert Camus. Suele asociarse a la
+                    filosofía del absurdo y al existencialismo</p>
+                <br></br>
+                <p><strong class="codigoClass">Código: EEX</strong></p>
+                <p><strong class="strongClass">Estado: Disponible</strong></p>
+                <p><strong>Autor: Albert Camus</strong></p>
+                <p><strong>Estante: A-42</strong></p>
+                <br></br>
+                <a href="#modal4" id="show-4" class="btn-open-popup" style="display: none;"><strong>VER MÁS</strong></a>
+            </div>
+
+            <div class="container-all" id="modal4">
+                <div class="popup">
+                    <div class="img4"></div>
+                    <div class="container-text">
+                        <h1>EL EXTRANJERO</h1>
+                        <p>El Extranjero (en francés, L'Étranger) es una novela publicada en 1942, la primera del
+                            escritor francés Albert Camus. El extranjero suele asociarse a la filosofía del absurdo
+                            y al existencialismo, aunque Camus siempre se distanció de esta última etiqueta. El
+                            protagonista, Meursault, es un francés argelino indiferente a la realidad por
+                            resultarle absurda e inabordable. El progreso tecnológico le ha privado de la
+                            participación en las decisiones colectivas y le ha convertido en «extranjero» dentro
+                            de lo que debería ser su propio entorno.</p>
+                        <br>
+
+                        <div class="cajaC" style="display: none;">
+                            <h1 class="codigoDeLibro">Solicitante</h1>
+                            <ul>
+                                <li><strong>Nombre: </strong><span class="nombre"></span></li>
+                                <li><strong>Apellido: </strong><span class="apellido"></span></li>
+                                <li><strong>Correo: </strong><span class="correo"></span></li>
+                                <li><strong>Telefono: </strong><span class="telefono"></span></li>
+                                <li><strong>Curso: </strong><span class="curso"></span></li>
+                                <li><strong>No. Registro: </strong><span class="numero"></span></li>
+                                <li><strong>Fecha de solicitud: </strong><span class="fechaS"></span></li>
+                                <li><strong>Fecha de devolucion: </strong><span class="fechaD"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div>
+
+            <div id="epr" class="articulo" data-aos="zoom-in-right">
+                <img src="Catalogo/EPR.jpg" style="height: inherit;width: inherit">
+                <br></br>
+                <h3>El Principito</h3>
+                <p>Es una novela corta y la obra más famosa del escritor y aviador francés Antoine de Saint-Exupéry.</p>
+                <br></br>
+                <p><strong class="codigoClass">Código: EPR</strong></p>
+                <p><strong class="strongClass">Estado: Disponible</strong></p>
+                <br>
+                <p><strong>Autor: Antoine de Saint-Exupéry</strong></p>
+                <p><strong>Estante: B-19</strong></p>
+                <br></br>
+                <a href="#modal5" id="show-5" class="btn-open-popup" style="display: none;"><strong>VER MÁS</strong></a>
+            </div>
+
+            <div class="container-all" id="modal5">
+                <div class="popup">
+                    <div class="img5"></div>
+                    <div class="container-text">
+                        <h1>EL PRINCIPITO</h1>
+                        <p>El principito (en francés: Le Petit Prince) es una novela corta y la obra más famosa
+                            del escritor y aviador francés Antoine de Saint-Exupéry (1900-1944). La novela fue
+                            publicada en abril de 1943, tanto en inglés como en francés, por la editorial
+                            estadounidense Reynal & Hitchcock, mientras que la editorial francesa Éditions
+                            Gallimard no pudo imprimir la obra hasta 1946, tras la liberación de Francia.
+                            Incluido entre los mejores libros del siglo XX en Francia, El principito se ha
+                            convertido en el libro escrito en francés más leído y más traducido. Además, el
+                            libro es considerado el primero del mundo en haber sido transcrito en símbolos
+                            fonéticos en lengua inglesa para estudiantes de inglés como segunda lengua. </p>
+                        <br>
+                        <div class="cajaC" style="display: none;">
+                            <h1 class="codigoDeLibro">Solicitante</h1>
+                            <ul>
+                                <li><strong>Nombre: </strong><span class="nombre"></span></li>
+                                <li><strong>Apellido: </strong><span class="apellido"></span></li>
+                                <li><strong>Correo: </strong><span class="correo"></span></li>
+                                <li><strong>Telefono: </strong><span class="telefono"></span></li>
+                                <li><strong>Curso: </strong><span class="curso"></span></li>
+                                <li><strong>No. Registro: </strong><span class="numero"></span></li>
+                                <li><strong>Fecha de solicitud: </strong><span class="fechaS"></span></li>
+                                <li><strong>Fecha de devolucion: </strong><span class="fechaD"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div>
+
+            <div id="erddg" class="articulo" data-aos="zoom-in-right">
+                <img src="Catalogo/ERDDG.jpg" style="height: inherit;width: inherit">
+                <br></br>
+                <h3>El Retrato De Dorian Gray</h3>
+                <p>Es una novela escrita por el autor irlandés Oscar Wilde. Publicada el 20 de junio de 1890, como
+                    cuento en Lippincott's Monthly Magazine.</p>
+                <br>
+                <p><strong class="codigoClass">Código: ERDDG</strong></p>
+                <p><strong class="strongClass">Estado: Disponible</strong></p>
+                <p><strong>Autor: Oscar Wilde</strong></p>
+                <p><strong>Estante: B-14</strong></p>
+                <br></br>
+                <a href="#modal6" id="show-6" class="btn-open-popup" style="display: none;"><strong>VER MÁS</strong></a>
+            </div>
+
+            <div class="container-all" id="modal6">
+                <div class="popup">
+                    <div class="img6"></div>
+                    <div class="container-text">
+                        <h1>EL RETRATO DE DORIAN GRAY</h1>
+                        <p>El retrato de Dorian Gray o El cuadro de Dorian Gray (original en inglés: The
+                            Picture of Dorian Gray) es una novela escrita por el autor irlandés Oscar Wilde.
+                            Originalmente publicada el 20 de junio de 1890, como cuento en Lippincott's
+                            Monthly Magazine, una revista mensual literaria estadounidense, Wilde revisaría
+                            la obra, haría varias modificaciones y agregaría nuevos capítulos para su
+                            publicación posterior como novela, su única obra publicada como novela. El retrato
+                            de Dorian Gray es considerada una de las últimas obras clásicas de la novela de
+                            terror gótica con una fuerte temática faustiana, además muestra un pintor con
+                            afecto íntimo y directo con el personaje principal.</p>
+                        <br>
+                        <div class="cajaC" style="display: none;">
+                            <h1 class="codigoDeLibro">Solicitante</h1>
+                            <ul>
+                                <li><strong>Nombre: </strong><span class="nombre"></span></li>
+                                <li><strong>Apellido: </strong><span class="apellido"></span></li>
+                                <li><strong>Correo: </strong><span class="correo"></span></li>
+                                <li><strong>Telefono: </strong><span class="telefono"></span></li>
+                                <li><strong>Curso: </strong><span class="curso"></span></li>
+                                <li><strong>No. Registro: </strong><span class="numero"></span></li>
+                                <li><strong>Fecha de solicitud: </strong><span class="fechaS"></span></li>
+                                <li><strong>Fecha de devolucion: </strong><span class="fechaD"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="JS/biblioteca.js"></script>
+</body>
+
+</html>

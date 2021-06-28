@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    background: #9eb5d9;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+Body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;   
+    margin: none;    
+}
+
+.container{
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    width: 900px;
+    padding: 30px;
+    box-shadow: 2px 2px 15px #4682b4;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 835px;
+    height: 380px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 25px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #4682b4;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    border-radius: 100%;
+  }
+
+  .menav {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.menav li a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    padding: 10px;   
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 10px;
+    border-radius: 65px;
+}
+
+.menav li a:hover{
+    background: #4682b4;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 90px;
+    margin-top: 10px;
+    padding: 25px 0;
+    float: left;
+}
+

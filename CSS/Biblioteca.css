@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 10px;
+}
+
+.cajaC{
+    margin-top: 15px;
+}
+
+.cajaC li{
+    margin-top: 0.3em;
+    list-style: none;
+}
+
+.codigoDeLibro{
+    margin-top: 0.2em;
+}
+
+Body{
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;    
+}
+
+header{
+    background: #9eb5d9;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 10px;
+    border-radius: 65px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7); 
+    padding: 10px;
+}
+
+.menu li a:hover{
+    background: #4682b4;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 90px;
+    margin-top: 10px;
+    padding: 25px 0;
+    float: left;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1250px;
+    overflow: hidden;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.contenedor-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+
+.articulo {
+    width: 35%;
+    background: #fff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+}
+
+#status{
+    display: flex;
+    float: right;
+}
+
+.btn-open-popup{
+    position: initial;
+    text-decoration: none;
+    top: 30%;
+    left: 30%;
+    color: #e8e8e8;
+    display: block;
+    background: #9eb5d9;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.container-all{
+    width: auto;
+    height: auto;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+
+.container-all:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-all:target .popup{
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
+
+.popup{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    background: white;
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+}
+
+
+.img1{
+    width: 40%;
+    background-image: url(../Catalogo/CADS.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2{
+    width: 40%;
+    background-image: url(../Catalogo/CDUMA.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img3{
+    width: 40%;
+    background-image: url(../Catalogo/EAL.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img4{
+    width: 40%;
+    background-image: url(../Catalogo/EEX.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img5{
+    width: 40%;
+    background-image: url(../Catalogo/EPR.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img6{
+    width: 40%;
+    background-image: url(../Catalogo/ERDDG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-text{
+    width: 60%;
+    padding: 50px;
+    overflow-y: auto;
+}
+
+
+.container-text h1{
+    font-size: 30px;
+}
+
+.container-text p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+.btn-close-popup{
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px){
+    .popup{
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+    }
+
+    .img{
+        width: 100%;
+        height: 40%;
+    }
+
+    .container-text{
+        width: 100%;
+        height: 60%;
+        padding: 80px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .container-text{
+        padding: 20px;
+    }
+
+    .container-text h1{
+        font-size: 20px;
+    }
+
+    .container-text p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
